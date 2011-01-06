@@ -14,7 +14,8 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "foreigner"
   gem.homepage = "http://github.com/jwoffindin/foreigner"
-  gem.summary = %Q{Fork}
+  gem.summary = "Foreign keys for Rails migrations for PostgreSQL, MySQL and Sqlite3. Based on sparkfly-foreigner"
+  gem.description = "Allows you to add foreign keys to your migrations and enforce them"
   gem.description = %Q{TODO: longer description of your gem}
   gem.email = "john.woffindin@sla-mobile.com.my"
   gem.authors = ["John woffindin"]
@@ -28,13 +29,6 @@ Jeweler::RubygemsDotOrgTasks.new
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
 end
