@@ -12,7 +12,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "foreigner"
+  gem.name = "jwoffindin-foreigner"
   gem.homepage = "http://github.com/jwoffindin/foreigner"
   gem.summary = "Foreign keys for Rails migrations for PostgreSQL, MySQL and Sqlite3. Based on sparkfly-foreigner"
   gem.description = "Allows you to add foreign keys to your migrations and enforce them"
@@ -24,6 +24,7 @@ Jeweler::Tasks.new do |gem|
   #  gem.add_development_dependency 'rspec', '> 1.2.3'
 end
 Jeweler::RubygemsDotOrgTasks.new
+Jeweler::GemcutterTasks.new
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
