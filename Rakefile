@@ -16,7 +16,6 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/jwoffindin/foreigner"
   gem.summary = "Foreign keys for Rails migrations for PostgreSQL, MySQL and Sqlite3. Based on sparkfly-foreigner"
   gem.description = "Allows you to add foreign keys to your migrations and enforce them"
-  gem.description = %Q{TODO: longer description of your gem}
   gem.email = "john.woffindin@sla-mobile.com.my"
   gem.authors = ["John woffindin"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
