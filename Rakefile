@@ -24,12 +24,12 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "sparkfly-foreigner"
-    gemspec.summary = "Foreign keys for Rails migrations for PostgreSQL, MySQL and Sqlite3. Based on dwilkie-foreigner"
+    gemspec.name = "jwoffindin-foreigner"
+    gemspec.summary = "Foreign keys for Rails migrations for PostgreSQL, MySQL and Sqlite3. Based on sparkfly-foreigner"
     gemspec.description = "Allows you to add foreign keys to your migrations and enforce them"
-    gemspec.email = "hosh@sparkfly.com"
-    gemspec.homepage = "http://github.com/hosh/foreigner"
-    gemspec.authors = ["Ho-Sheng Hsiao"]
+    gemspec.email = "john.woffindin@sla-mobile.com.my"
+    gemspec.homepage = "http://github.com/jwoffindin/foreigner"
+    gemspec.authors = ["Ho-Sheng Hsiao","John Woffindin"]
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
