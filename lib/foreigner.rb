@@ -53,6 +53,9 @@ Foreigner.on_load do
       include Foreigner::SchemaDumper
     end
   end
-  
-  Foreigner.load_adapter! if defined?(Rails) # Audo-load if within Rails
+
+  # Disabled autoloading in rails; screws up rake tasks. Only need it
+  # for migrations, so will put hook into Rakefile to do this for
+  # migration tasks only.
+  # Foreigner.load_adapter! if defined?(Rails) # Audo-load if within Rails
 end
